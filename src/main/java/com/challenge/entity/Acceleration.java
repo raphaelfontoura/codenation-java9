@@ -47,7 +47,7 @@ public class Acceleration {
 	@Column(name = "created_at")
 	private LocalDateTime createdAt;
 	
-	@OneToMany(mappedBy = "acceleration")
+	@OneToMany
 	private List<Candidate> candidates;
 	
 	public int getId() {

@@ -40,7 +40,7 @@ public class Challenge {
 	@OneToMany(mappedBy = "challenge")
 	private List<Acceleration> accelerations;
 	
-	@OneToMany(mappedBy = "challenge")
+	@OneToMany
 	private List<Submission> submissions;
 	
 	@CreatedDate

@@ -21,15 +21,15 @@ public class Submission {
 	@EmbeddedId
 	private SubmissionId identity;
 	
-	@ManyToOne
-	@MapsId("user_id")
-	@JoinColumn(name = "user_id")
-	private User user;
-	
-	@ManyToOne
-	@MapsId("challenge_id")
-	@JoinColumn(name = "challenge_id")
-	private Challenge challenge;
+//	@ManyToOne
+//	@MapsId("user_id")
+//	@JoinColumn(name = "user_id")
+//	private User user;
+//	
+//	@ManyToOne
+//	@MapsId("challenge_id")
+//	@JoinColumn(name = "challenge_id")
+//	private Challenge challenge;
 	
 	@NotNull
 	private float score;

@@ -21,20 +21,20 @@ public class Candidate {
 	@EmbeddedId
 	private CandidateId id;
 	
-	@ManyToOne
-	@MapsId("user_id")
-	@JoinColumn(name = "user_id")
-	private User user;
-	
-	@ManyToOne
-	@MapsId("acceleration_id")
-	@JoinColumn(name = "acceleration_id")
-	private Acceleration acceleration;
-	
-	@ManyToOne
-	@MapsId("company_id")
-	@JoinColumn(name = "company_id")
-	private Company company;
+//	@ManyToOne
+//	@MapsId("user_id")
+//	@JoinColumn(name = "user_id")
+//	private User user;
+//	
+//	@ManyToOne
+//	@MapsId("acceleration_id")
+//	@JoinColumn(name = "acceleration_id")
+//	private Acceleration acceleration;
+//	
+//	@ManyToOne
+//	@MapsId("company_id")
+//	@JoinColumn(name = "company_id")
+//	private Company company;
 	
 	@NotNull
 	private int status;

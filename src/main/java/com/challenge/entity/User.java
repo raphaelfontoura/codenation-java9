@@ -53,10 +53,10 @@ public class User {
 	@Column(name = "created_at")
 	private LocalDateTime createdAt;
 	
-	@OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+	@OneToMany(fetch = FetchType.LAZY)
 	private List<Candidate> candidates;
 	
-	@OneToMany(mappedBy = "user" ,fetch = FetchType.LAZY)
+	@OneToMany(fetch = FetchType.LAZY)
 	private List<Submission> submissions;
 	
 	public int getId() {

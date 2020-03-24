@@ -40,7 +40,7 @@ public class Company {
 	@Column(name = "created_at")
 	private LocalDateTime createdAd;
 	
-	@OneToMany(mappedBy = "company")
+	@OneToMany
 	private List<Candidate> candidates;
 
 	public String getName() {
