@@ -4,26 +4,27 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.persistence.ManyToOne;
 
 @Embeddable
 public class CandidateId implements Serializable {
 	
-	@Column(name = "user_id")
-	private int user;
+	@ManyToOne
+	private User user;
 	
-	@Column(name = "acceleration_id")
-	private int acceleration;
+	@ManyToOne
+	private Acceleration acceleration;
 	
-	@Column(name = "company_id")
-	private int company;
+	@ManyToOne
+	private Company company;
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + acceleration;
-		result = prime * result + company;
-		result = prime * result + user;
+		result = prime * result + ((acceleration == null) ? 0 : acceleration.hashCode());
+		result = prime * result + ((company == null) ? 0 : company.hashCode());
+		result = prime * result + ((user == null) ? 0 : user.hashCode());
 		return result;
 	}
 
